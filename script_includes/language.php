@@ -7,3 +7,7 @@ if(in_array($request_folder, array('de', 'en'))) {
 }
 
 define('LANG', $language);
+
+if(LANG != 'en') {
+    Utilities::redirect(BASEURL . 'en/index.html', 301);
+}

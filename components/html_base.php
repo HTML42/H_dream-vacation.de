@@ -5,7 +5,7 @@
         <?= File::i('components/html_head.php')->get_content() ?>
         
     </head>
-    <body>
+    <body data-area="<?= AREA ?>">
         <?= File::i('components/header.php')->get_content() ?>
         <main>
             <article>##yield##</article>

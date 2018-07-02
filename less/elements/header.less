@@ -1,6 +1,6 @@
 header {
     height: @header_height;
-    background-color: @color_main_normal;
+    background-color: @color_theme_www_main;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,10 +13,22 @@ header {
         position: absolute;
         top: @distance_small;
         left: @distance_small;
-        height: 100px / 2;
-        width: 446px / 2;
-        background: transparent url('../images/logo/html42_h100.png') no-repeat center / 100%;
-        text-indent: -9999px;
-        color: transparent;
+        font-size: 2em;
+        font-style: italic;
+        .area {
+            font-size: 0.8em;
+            &:after {
+                content: '.';
+            }
+            [data-area="www"] & {
+                display: none;
+            }
+        }
+        [data-area="www"] & {
+            color: #CCC;
+        }
+        [data-area="nature"] & {
+            color: #3F3;
+        }
     }
 }

@@ -12,13 +12,9 @@
                 color: #FFF;
                 font-weight: 700;
                 &:hover {
-                    text-decoration: none;
-                    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
                 }
                 &.active {
-                    color: @color_secondary_normal;
                     &:hover {
-                        text-shadow: none;
                     }
                 }
             }
@@ -48,8 +44,7 @@
         position: fixed;
         top: @header_height;
         left: 0;
-        z-index: 100;
-        background-color: @color_main_dark;
+        z-index: 100; 
         ul {
             @navi_item_height: 50px;
             @navi_item_length: 4;
@@ -60,7 +55,7 @@
                 max-height: @navi_item_length * @navi_item_height + @navi_item_length * 1px;
             }
             li {
-                border-top: 1px solid @color_border_normal;
+                border-top: 1px solid #CCC;
                 > a {
                     text-align: center;
                     font-size: @navi_item_height / 2;

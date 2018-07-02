@@ -1,0 +1,10 @@
+{
+    "name": "Rainforest Resort Phitsanulok",
+    "url": "https://www.rainforestthailand.com",
+    "continent": "asia",
+    "country": "Thailand",
+    "description": {
+        "en": "Description EN",
+        "de": "Beschreibung DE"
+    }
+}
