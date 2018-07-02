@@ -1,7 +1,8 @@
 //Config
 var config = {
     css: [
-        'less/html42/html42_mixins.less',
+        'xtreme/-init/files/less/html42/html42_mixins.less',
+        'xtreme/-init/files/less/html42/gdprx.less',
         'less/settings.less',
         'less/base.less',
         'less/elements/header.less',
@@ -9,11 +10,12 @@ var config = {
         'less/elements/box.less'
     ],
     js: [
-        'js/project.js',
-        'js/jquery/jquery-3.1.0.js',
-        'js/html42/xtreme.js',
-        'js/html42/technologies/list_length.js',
-        'js/html42/technologies/ajax_links.js'
+        'xtreme/-init/files/js/jquery/jquery-3.1.0.js',
+        'xtreme/-init/files/js/html42/gdprx.js',
+        'xtreme/-init/files/js/html42/xtreme.js',
+        'xtreme/-init/files/js/html42/technologies/list_length.js',
+        'xtreme/-init/files/js/html42/technologies/ajax_links.js',
+        'js/project.js'
     ]
 };
 
