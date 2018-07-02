@@ -101,7 +101,7 @@ gulp.task('less', function () {
             .pipe(gulp.dest('./assets/css/'));
 });
 gulp.task('js', function () {
-    return gulp.src('./js/**/*')
+    return gulp.src(config.js)
             .pipe(sourcemaps.init())
             .pipe(concat('script.js'))
             .pipe(sourcemaps.write())

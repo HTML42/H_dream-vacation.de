@@ -1,1 +1,3 @@
-<h1>Welcome</h1>
+<?php
+
+Utilities::redirect('en/index.html', 301);

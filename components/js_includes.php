@@ -1,1 +1,1 @@
-<script src="assets/js/<?= ENV == 'live' ? 'min/' : '' ?>script.js" async></script>
+<script src="<?= (is_null(LANG) ? '' : '../') ?>assets/js/<?= ENV == 'live' ? 'min/' : '' ?>script.js" async></script>
