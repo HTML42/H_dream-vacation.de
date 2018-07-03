@@ -6,8 +6,13 @@ if (preg_match('/(\w+)\.dream-vacation.\w+/is', $_SERVER['SERVER_NAME'], $area_m
     $area = $area_match[1];
 }
 //
-if (ENV != 'live' && isset($_COOKIE['area']) && is_string($_COOKIE['area']) && strlen($_COOKIE['area']) > 1) {
+if (ENV != 'live') {
     $area = trim(strtolower($_COOKIE['area']));
+    if (isset($_GET['area']) && is_string($_GET['area']) && strlen($_GET['area']) > 1) {
+        $area = trim(strtolower($_GET['area']));
+    } else if (isset($_COOKIE['area']) && is_string($_COOKIE['area']) && strlen($_COOKIE['area']) > 1) {
+        $area = trim(strtolower($_COOKIE['area']));
+    }
 }
 //
 if (!in_array($area, $existing_areas)) {
@@ -54,6 +59,23 @@ function get_resorts($area_name, &$resorts) {
             }
         }
     }
+}
+
+function _href($resort, $area = null) {
+    if (is_string($resort) && strlen($resort) > 2) {
+        if (!is_string($area)) {
+            $area = AREA;
+        }
+        $area = trim(strtolower($area));
+        $resort = trim(strtolower($resort));
+        $url_end = LANG . '/' . $resort . '.html';
+        if (ENV == 'live') {
+            return 'https://' . $area . '.dream-vacation.de/' . $url_end;
+        } else {
+            return BASEURL . $url_end . '?area='  .$area;
+        }
+    }
+    return '#404-not-found';
 }
 
 //

@@ -7,7 +7,8 @@ var config = {
         'less/base.less',
         'less/elements/header.less',
         'less/elements/navigation.less',
-        'less/elements/box.less'
+        'less/elements/box.less',
+        'less/elements/overview_lists.less'
     ],
     js: [
         'xtreme/-init/files/js/jquery/jquery-3.1.0.js',
