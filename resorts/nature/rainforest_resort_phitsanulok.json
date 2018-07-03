@@ -6,5 +6,9 @@
     "description": {
         "en": "Description EN",
         "de": "Beschreibung DE"
+    },
+    "description_short": {
+        "en": "Description SHORT EN",
+        "de": "Beschreibung KURZ DE"
     }
 }

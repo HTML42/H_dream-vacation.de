@@ -10,7 +10,7 @@
                     <li>
                         <h4><?= $resort_name ?></h4>
                         <div>
-                            <a href="<?= _href($resort_name, 'nature') ?>">Details</a>
+                            <a href="<?= _href($resort_name, $resort_area) ?>">Details</a>
                         </div>
                     </li>
                 <?php } ?>
