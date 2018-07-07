@@ -4,9 +4,9 @@
         Contintent: <?= $resort['continent'] ?><br/>
         Country: <?= $resort['country'] ?>
     </div>
-    <p class="resort_details_description">
+    <div class="resort_details_description">
         <?= $resort['description'][LANG] ?>
-    </p>
+    </div>
     <div class="resort_details_link">
         <a href="<?= $resort['url'] ?>" target="_blank">To the Resort</a>
     </div>
